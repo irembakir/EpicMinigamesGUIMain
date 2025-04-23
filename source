@@ -784,4 +784,22 @@ local function PJWKGV_fake_script() -- TextButton.Dragify
 	dragify(script.Parent)
 	
 end
+
+EpicMiniGamesGUI:Clone().Parent = game.ReplicatedStorage
+
+local player = game.Players.LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui")
+local epicMiniGamesGUInew = game.ReplicatedStorage:WaitForChild("EpicMiniGamesGUI")  -- Reference to the GUI in ReplicatedStorage
+
+-- Function to create/clone the GUI from ReplicatedStorage
+local function createGui()
+	local newScreenGui = epicMiniGamesGUInew:Clone()
+	newScreenGui.Parent = playerGui  -- Parent it to PlayerGui
+end
+
+-- When the player respawns, re-parent the GUI to PlayerGui
+player.CharacterAdded:Connect(function()
+	wait(1)  -- Wait a moment after the character respawns
+	createGui()  -- Clone and parent the GUI again
+end)
 coroutine.wrap(PJWKGV_fake_script)()
