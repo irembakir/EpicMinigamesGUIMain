@@ -41,6 +41,7 @@ local TextButton = Instance.new("TextButton")
 
 --Properties:
 
+EpicMiniGamesGUI.ResetOnSpawn = true
 EpicMiniGamesGUI.Name = "EpicMiniGamesGUI"
 EpicMiniGamesGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 EpicMiniGamesGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
