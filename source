@@ -1,0 +1,786 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local EpicMiniGamesGUI = Instance.new("ScreenGui")
+local Menu = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local Buttons = Instance.new("Folder")
+local MainEMMenu = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local InfJump = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local InfYield = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Lobby = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Line = Instance.new("Frame")
+local EasterEvent = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+local UICorner_6 = Instance.new("UICorner")
+local Buttons_2 = Instance.new("Folder")
+local GoblinsHunter = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local EasterBunny = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local EggVendingMachine = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local Barnabus = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local Neira = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local Dane = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local GetAllEggs = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local Line_2 = Instance.new("Frame")
+local OpenAndClose = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+
+--Properties:
+
+EpicMiniGamesGUI.Name = "EpicMiniGamesGUI"
+EpicMiniGamesGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+EpicMiniGamesGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Menu.Name = "Menu"
+Menu.Parent = EpicMiniGamesGUI
+Menu.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+Menu.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Menu.BorderSizePixel = 0
+Menu.Position = UDim2.new(0.403520375, 0, 0.337614685, 0)
+Menu.Size = UDim2.new(0.0818619579, 0, 0.171604201, 0)
+Menu.Visible = false
+
+TextLabel.Parent = Menu
+TextLabel.BackgroundColor3 = Color3.fromRGB(156, 156, 156)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(1, 0, 0.125, 0)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Epic Minigames Menu"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UICorner.CornerRadius = UDim.new(0, 15)
+UICorner.Parent = Menu
+
+Buttons.Name = "Buttons"
+Buttons.Parent = Menu
+
+MainEMMenu.Name = "MainEMMenu"
+MainEMMenu.Parent = Buttons
+MainEMMenu.BackgroundColor3 = Color3.fromRGB(111, 0, 0)
+MainEMMenu.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainEMMenu.BorderSizePixel = 0
+MainEMMenu.Position = UDim2.new(0.0860215053, 0, 0.181818187, 0)
+MainEMMenu.Size = UDim2.new(0.822580636, 0, 0.164772734, 0)
+MainEMMenu.Font = Enum.Font.SourceSans
+MainEMMenu.Text = "Main Script"
+MainEMMenu.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainEMMenu.TextScaled = true
+MainEMMenu.TextSize = 14.000
+MainEMMenu.TextWrapped = true
+
+UICorner_2.Parent = MainEMMenu
+
+InfJump.Name = "InfJump"
+InfJump.Parent = Buttons
+InfJump.BackgroundColor3 = Color3.fromRGB(98, 98, 98)
+InfJump.BorderColor3 = Color3.fromRGB(0, 0, 0)
+InfJump.BorderSizePixel = 0
+InfJump.Position = UDim2.new(0.0860215053, 0, 0.602272749, 0)
+InfJump.Size = UDim2.new(0.822580636, 0, 0.164772734, 0)
+InfJump.Font = Enum.Font.SourceSans
+InfJump.Text = "InfiniteJump: OFF"
+InfJump.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfJump.TextScaled = true
+InfJump.TextSize = 14.000
+InfJump.TextWrapped = true
+
+UICorner_3.Parent = InfJump
+
+InfYield.Name = "InfYield"
+InfYield.Parent = Buttons
+InfYield.BackgroundColor3 = Color3.fromRGB(111, 0, 0)
+InfYield.BorderColor3 = Color3.fromRGB(0, 0, 0)
+InfYield.BorderSizePixel = 0
+InfYield.Position = UDim2.new(0.0860215053, 0, 0.392045468, 0)
+InfYield.Size = UDim2.new(0.822580636, 0, 0.164772734, 0)
+InfYield.Font = Enum.Font.SourceSans
+InfYield.Text = "Infinite Yield"
+InfYield.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfYield.TextScaled = true
+InfYield.TextSize = 14.000
+InfYield.TextWrapped = true
+
+UICorner_4.Parent = InfYield
+
+Lobby.Name = "Lobby"
+Lobby.Parent = Buttons
+Lobby.BackgroundColor3 = Color3.fromRGB(98, 98, 98)
+Lobby.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Lobby.BorderSizePixel = 0
+Lobby.Position = UDim2.new(0.0860215053, 0, 0.801136374, 0)
+Lobby.Size = UDim2.new(0.822580636, 0, 0.164772734, 0)
+Lobby.Font = Enum.Font.SourceSans
+Lobby.Text = "Lobby"
+Lobby.TextColor3 = Color3.fromRGB(255, 255, 255)
+Lobby.TextScaled = true
+Lobby.TextSize = 14.000
+Lobby.TextWrapped = true
+
+UICorner_5.Parent = Lobby
+
+Line.Name = "Line"
+Line.Parent = Menu
+Line.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Line.BorderSizePixel = 0
+Line.Position = UDim2.new(0, 0, 0.125, 0)
+Line.Size = UDim2.new(1, 0, 0.0113636367, 0)
+
+EasterEvent.Name = "EasterEvent"
+EasterEvent.Parent = EpicMiniGamesGUI
+EasterEvent.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+EasterEvent.BorderColor3 = Color3.fromRGB(0, 0, 0)
+EasterEvent.BorderSizePixel = 0
+EasterEvent.Position = UDim2.new(0.492776901, 0, 0.337614805, 0)
+EasterEvent.Size = UDim2.new(0.103359856, 0, 0.32477054, 0)
+EasterEvent.Visible = false
+
+TextLabel_2.Parent = EasterEvent
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(156, 156, 156)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0, 0, 5.26165245e-08, 0)
+TextLabel_2.Size = UDim2.new(1, 0, 0.113792919, 0)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Easter Event"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+UICorner_6.CornerRadius = UDim.new(0, 15)
+UICorner_6.Parent = EasterEvent
+
+Buttons_2.Name = "Buttons"
+Buttons_2.Parent = EasterEvent
+
+GoblinsHunter.Name = "GoblinsHunter"
+GoblinsHunter.Parent = Buttons_2
+GoblinsHunter.BackgroundColor3 = Color3.fromRGB(98, 98, 98)
+GoblinsHunter.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GoblinsHunter.BorderSizePixel = 0
+GoblinsHunter.Position = UDim2.new(0.0860215053, 0, 0.181818187, 0)
+GoblinsHunter.Size = UDim2.new(0.822580636, 0, 0.0944625437, 0)
+GoblinsHunter.Font = Enum.Font.SourceSans
+GoblinsHunter.Text = "Hunt Goblins"
+GoblinsHunter.TextColor3 = Color3.fromRGB(255, 255, 255)
+GoblinsHunter.TextScaled = true
+GoblinsHunter.TextSize = 14.000
+GoblinsHunter.TextWrapped = true
+
+UICorner_7.Parent = GoblinsHunter
+
+EasterBunny.Name = "EasterBunny"
+EasterBunny.Parent = Buttons_2
+EasterBunny.BackgroundColor3 = Color3.fromRGB(98, 98, 98)
+EasterBunny.BorderColor3 = Color3.fromRGB(0, 0, 0)
+EasterBunny.BorderSizePixel = 0
+EasterBunny.Position = UDim2.new(0.0860215053, 0, 0.41986233, 0)
+EasterBunny.Size = UDim2.new(0.822580636, 0, 0.0944625437, 0)
+EasterBunny.Font = Enum.Font.SourceSans
+EasterBunny.Text = "Easter Bunny"
+EasterBunny.TextColor3 = Color3.fromRGB(255, 255, 255)
+EasterBunny.TextScaled = true
+EasterBunny.TextSize = 14.000
+EasterBunny.TextWrapped = true
+
+UICorner_8.Parent = EasterBunny
+
+EggVendingMachine.Name = "EggVendingMachine"
+EggVendingMachine.Parent = Buttons_2
+EggVendingMachine.BackgroundColor3 = Color3.fromRGB(98, 98, 98)
+EggVendingMachine.BorderColor3 = Color3.fromRGB(0, 0, 0)
+EggVendingMachine.BorderSizePixel = 0
+EggVendingMachine.Position = UDim2.new(0.0860215053, 0, 0.300840288, 0)
+EggVendingMachine.Size = UDim2.new(0.822580636, 0, 0.0944625437, 0)
+EggVendingMachine.Font = Enum.Font.SourceSans
+EggVendingMachine.Text = "Egg Vending Machine"
+EggVendingMachine.TextColor3 = Color3.fromRGB(255, 255, 255)
+EggVendingMachine.TextScaled = true
+EggVendingMachine.TextSize = 14.000
+EggVendingMachine.TextWrapped = true
+
+UICorner_9.Parent = EggVendingMachine
+
+Barnabus.Name = "Barnabus"
+Barnabus.Parent = Buttons_2
+Barnabus.BackgroundColor3 = Color3.fromRGB(98, 98, 98)
+Barnabus.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Barnabus.BorderSizePixel = 0
+Barnabus.Position = UDim2.new(0.0860215053, 0, 0.534035325, 0)
+Barnabus.Size = UDim2.new(0.822580636, 0, 0.0944625437, 0)
+Barnabus.Font = Enum.Font.SourceSans
+Barnabus.Text = "Barnabus"
+Barnabus.TextColor3 = Color3.fromRGB(255, 255, 255)
+Barnabus.TextScaled = true
+Barnabus.TextSize = 14.000
+Barnabus.TextWrapped = true
+
+UICorner_10.Parent = Barnabus
+
+Neira.Name = "Neira"
+Neira.Parent = Buttons_2
+Neira.BackgroundColor3 = Color3.fromRGB(98, 98, 98)
+Neira.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Neira.BorderSizePixel = 0
+Neira.Position = UDim2.new(0.0860215053, 0, 0.654556513, 0)
+Neira.Size = UDim2.new(0.822580636, 0, 0.0944625437, 0)
+Neira.Font = Enum.Font.SourceSans
+Neira.Text = "Neira"
+Neira.TextColor3 = Color3.fromRGB(255, 255, 255)
+Neira.TextScaled = true
+Neira.TextSize = 14.000
+Neira.TextWrapped = true
+
+UICorner_11.Parent = Neira
+
+Dane.Name = "Dane"
+Dane.Parent = Buttons_2
+Dane.BackgroundColor3 = Color3.fromRGB(98, 98, 98)
+Dane.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Dane.BorderSizePixel = 0
+Dane.Position = UDim2.new(0.0860215053, 0, 0.775077701, 0)
+Dane.Size = UDim2.new(0.822580636, 0, 0.0944625437, 0)
+Dane.Font = Enum.Font.SourceSans
+Dane.Text = "Dane"
+Dane.TextColor3 = Color3.fromRGB(255, 255, 255)
+Dane.TextScaled = true
+Dane.TextSize = 14.000
+Dane.TextWrapped = true
+
+UICorner_12.Parent = Dane
+
+GetAllEggs.Name = "GetAllEggs"
+GetAllEggs.Parent = Buttons_2
+GetAllEggs.BackgroundColor3 = Color3.fromRGB(98, 98, 98)
+GetAllEggs.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GetAllEggs.BorderSizePixel = 0
+GetAllEggs.Position = UDim2.new(0.0860215053, 0, 0.905370831, 0)
+GetAllEggs.Size = UDim2.new(0.822580636, 0, 0.0944625437, 0)
+GetAllEggs.Font = Enum.Font.SourceSans
+GetAllEggs.Text = "Get All Eggs"
+GetAllEggs.TextColor3 = Color3.fromRGB(255, 255, 255)
+GetAllEggs.TextScaled = true
+GetAllEggs.TextSize = 14.000
+GetAllEggs.TextWrapped = true
+
+UICorner_13.Parent = GetAllEggs
+
+Line_2.Name = "Line"
+Line_2.Parent = EasterEvent
+Line_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Line_2.BorderSizePixel = 0
+Line_2.Position = UDim2.new(0, 0, 0.125, 0)
+Line_2.Size = UDim2.new(1, 0, 0.00651465775, 0)
+
+OpenAndClose.Name = "OpenAndClose"
+OpenAndClose.Parent = EpicMiniGamesGUI
+OpenAndClose.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+OpenAndClose.BackgroundTransparency = 1.000
+OpenAndClose.BorderColor3 = Color3.fromRGB(0, 0, 0)
+OpenAndClose.BorderSizePixel = 0
+OpenAndClose.Position = UDim2.new(0.0690208673, 0, 0.475229353, 0)
+OpenAndClose.Size = UDim2.new(0.0794542506, 0, 0.0990825668, 0)
+
+TextButton.Parent = OpenAndClose
+TextButton.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Size = UDim2.new(1, 0, 1, 0)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "OPEN"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+-- Scripts:
+
+local function HBNE_fake_script() -- MainEMMenu.LocalScript 
+	local script = Instance.new('LocalScript', MainEMMenu)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/SlamminPig/rblxgames/main/Epic%20Minigames/EpicMinigamesGUI"))()
+	end)
+end
+coroutine.wrap(HBNE_fake_script)()
+local function RADRXAQ_fake_script() -- InfJump.LocalScript 
+	local script = Instance.new('LocalScript', InfJump)
+
+	--// Services
+	local player = game.Players.LocalPlayer
+	local uis = game:GetService("UserInputService")
+	local debris = game:GetService("Debris")
+	
+	--// Button Setup
+	local button = script.Parent
+	local infJumpEnabled = false
+	local holdingSpace = false
+	
+	--// Preserve the state across respawns
+	local function saveInfJumpState(state)
+		-- Store the state in player
+		player:SetAttribute("InfJumpEnabled", state)
+	end
+	
+	local function loadInfJumpState()
+		-- Retrieve the state when respawned
+		return player:GetAttribute("InfJumpEnabled") or false
+	end
+	
+	--// Spawn landing part
+	local function spawnLandingPart()
+		if not player.Character or not player.Character:FindFirstChild("HumanoidRootPart") then return end
+	
+		local hrp = player.Character.HumanoidRootPart
+	
+		local landingPart = Instance.new("Part")
+		landingPart.Size = Vector3.new(5, 1, 5)
+		landingPart.Anchored = true
+		landingPart.CanCollide = true
+		landingPart.Transparency = 1 -- Invisible
+		landingPart.Position = hrp.Position - Vector3.new(0, 5, 0)
+		landingPart.Parent = workspace
+	
+		debris:AddItem(landingPart, 0.1)
+	end
+	
+	--// Input Began
+	local function onInputBegan(input, gameProcessed)
+		if not infJumpEnabled then return end
+		if input.UserInputType == Enum.UserInputType.Keyboard and input.KeyCode == Enum.KeyCode.Space then
+			holdingSpace = true
+			while holdingSpace and infJumpEnabled do
+				spawnLandingPart()
+				task.wait(0.05)
+			end
+		end
+	end
+	
+	--// Input Ended
+	local function onInputEnded(input, gameProcessed)
+		if input.UserInputType == Enum.UserInputType.Keyboard and input.KeyCode == Enum.KeyCode.Space then
+			holdingSpace = false
+		end
+	end
+	
+	--// Toggle Button
+	button.MouseButton1Click:Connect(function()
+		infJumpEnabled = not infJumpEnabled
+		saveInfJumpState(infJumpEnabled)
+		button.Text = "InfiniteJump: " .. (infJumpEnabled and "ON" or "OFF")
+	end)
+	
+	--// Character Respawn Handling
+	player.CharacterAdded:Connect(function()
+		-- Load state after respawn
+		infJumpEnabled = loadInfJumpState()
+		button.Text = "InfiniteJump: " .. (infJumpEnabled and "ON" or "OFF")
+	end)
+	
+	--// Connect Inputs
+	uis.InputBegan:Connect(onInputBegan)
+	uis.InputEnded:Connect(onInputEnded)
+	
+	--// Initialize button text with saved state (if any)
+	infJumpEnabled = loadInfJumpState()
+	button.Text = "InfiniteJump: " .. (infJumpEnabled and "ON" or "OFF")
+	
+end
+coroutine.wrap(RADRXAQ_fake_script)()
+local function JIWTNLO_fake_script() -- InfYield.LocalScript 
+	local script = Instance.new('LocalScript', InfYield)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+	end)
+end
+coroutine.wrap(JIWTNLO_fake_script)()
+local function BGLIF_fake_script() -- Lobby.LocalScript 
+	local script = Instance.new('LocalScript', Lobby)
+
+	local player = game.Players.LocalPlayer
+	local button = script.Parent
+	
+	-- Function to kill the player
+	local function killPlayer()
+		local character = player.Character
+		if character then
+			local humanoid = character:FindFirstChildOfClass("Humanoid")
+			if humanoid then
+				humanoid.Health = 0  -- Set health to 0 to kill the player
+			end
+		end
+	end
+	
+	-- Button click event: Kill the player
+	button.MouseButton1Click:Connect(function()
+		killPlayer()
+		print("Player has been killed.")
+	end)
+	
+end
+coroutine.wrap(BGLIF_fake_script)()
+local function ZJDT_fake_script() -- GoblinsHunter.LocalScript 
+	local script = Instance.new('LocalScript', GoblinsHunter)
+
+	--// Services
+	local player = game.Players.LocalPlayer
+	local button = script.Parent  -- Button for toggling
+	local soulsFolder = game.Workspace:WaitForChild("Lobby"):WaitForChild("Souls")
+	local userInputService = game:GetService("UserInputService")
+	
+	--// Variables
+	local currentNpcIndex = 1  -- Keep track of the current NPC to teleport to
+	local npcs = {}  -- List of NPCs
+	local teleportDistance = 3  -- Distance from NPC to teleport player (closer to NPC)
+	
+	--// Function to get all the NPCs in the SoulsFolder
+	local function getNpcs()
+	    npcs = {}
+	    for _, npc in ipairs(soulsFolder:GetChildren()) do
+	        if npc.Name == "RockGoblin" and npc:IsA("Model") then
+	            table.insert(npcs, npc)
+	        end
+	    end
+	end
+	
+	--// Function to teleport player behind NPC
+	local function teleportToNpc(npc)
+	    if npc and npc.Parent then
+	        local npcPosition = npc.PrimaryPart.Position  -- Get the position of the NPC's primary part
+	        local behindNpcPosition = npcPosition - (npc.PrimaryPart.CFrame.LookVector * teleportDistance)  -- Position behind NPC
+	        
+	        -- Teleport the player to the position behind the NPC
+	        player.Character:SetPrimaryPartCFrame(CFrame.new(behindNpcPosition))
+	    end
+	end
+	
+	--// Button press functionality
+	button.MouseButton1Click:Connect(function()
+	    getNpcs()  -- Populate the NPCs list
+	
+	    if currentNpcIndex <= #npcs then
+	        local npc = npcs[currentNpcIndex]
+	        if npc and npc.Parent then
+	            teleportToNpc(npc)  -- Teleport the player behind the current NPC
+	            currentNpcIndex = currentNpcIndex + 1  -- Move to the next NPC in the list
+	        end
+	    else
+	        -- All NPCs have been visited, reset the index to start from the first NPC again
+	        currentNpcIndex = 1
+	        print("All NPCs visited, starting over!")
+	    end
+	end)
+	
+end
+coroutine.wrap(ZJDT_fake_script)()
+local function LOGHL_fake_script() -- EasterBunny.LocalScript 
+	local script = Instance.new('LocalScript', EasterBunny)
+
+	local player = game.Players.LocalPlayer
+	local npc = game.Workspace:WaitForChild("Lobby"):WaitForChild("QuestStuff"):WaitForChild("NPCs"):WaitForChild("Easter Bunny"):WaitForChild("HumanoidRootPart")
+	
+	local button = script.Parent
+	
+	-- Function to teleport the player to the NPC
+	local function teleportToNPC()
+		local character = player.Character
+		if character then
+			local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+			if humanoidRootPart then
+				-- Set the player's position to the NPC's position
+				humanoidRootPart.CFrame = CFrame.new(npc.Position + Vector3.new(0, 3, 0)) -- Adjust to teleport above NPC
+			end
+		end
+	end
+	
+	-- Button click event: Teleport the player to the NPC
+	button.MouseButton1Click:Connect(function()
+		teleportToNPC()
+		print("Player Teleported to the EasterBunny NPC")
+	end)
+	
+end
+coroutine.wrap(LOGHL_fake_script)()
+local function JWHDO_fake_script() -- EggVendingMachine.LocalScript 
+	local script = Instance.new('LocalScript', EggVendingMachine)
+
+	local player = game.Players.LocalPlayer
+	local part = game.Workspace.Lobby.QuestStuff.Sets.eggVendingMachine.cannon:WaitForChild("FirePart")
+	
+	local button = script.Parent
+	
+	-- Function to teleport the player on top of the part
+	local function teleportPlayer()
+		local character = player.Character
+		if character then
+			-- Wait for the character's humanoid root part
+			local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+			local humanoid = character:WaitForChild("Humanoid")
+	
+			-- Ensure the Firepart exists
+			if part then
+				-- Calculate the position on top of the part
+				local newPosition = part.Position + Vector3.new(0, part.Size.Y / 2 + humanoid.HipHeight, 0)
+	
+				-- Teleport player to the new position
+				humanoidRootPart.CFrame = CFrame.new(newPosition)
+				print("Player Teleported to the top of Firepart")
+			else
+				warn("Firepart not found")
+			end
+		else
+			warn("Character not loaded")
+		end
+	end
+	
+	-- Button click event: Teleport the player
+	button.MouseButton1Click:Connect(function()
+		teleportPlayer()
+	end)
+	
+end
+coroutine.wrap(JWHDO_fake_script)()
+local function LMQNDUM_fake_script() -- Barnabus.LocalScript 
+	local script = Instance.new('LocalScript', Barnabus)
+
+	local player = game.Players.LocalPlayer
+	local npc = game.Workspace:WaitForChild("Lobby"):WaitForChild("QuestStuff"):WaitForChild("NPCs"):WaitForChild("Barnabus"):WaitForChild("HumanoidRootPart")
+	
+	local button = script.Parent
+	
+	-- Function to teleport the player to the NPC
+	local function teleportToNPC()
+		local character = player.Character
+		if character then
+			local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+			if humanoidRootPart then
+				-- Set the player's position to the NPC's position
+				humanoidRootPart.CFrame = CFrame.new(npc.Position + Vector3.new(0, 3, 0)) -- Adjust to teleport above NPC
+			end
+		end
+	end
+	
+	-- Button click event: Teleport the player to the NPC
+	button.MouseButton1Click:Connect(function()
+		teleportToNPC()
+		print("Player Teleported to the EasterBunny NPC")
+	end)
+	
+end
+coroutine.wrap(LMQNDUM_fake_script)()
+local function EPSTAJK_fake_script() -- Neira.LocalScript 
+	local script = Instance.new('LocalScript', Neira)
+
+	local player = game.Players.LocalPlayer
+	local npc = game.Workspace:WaitForChild("Lobby"):WaitForChild("QuestStuff"):WaitForChild("NPCs"):WaitForChild("Neira"):WaitForChild("HumanoidRootPart")
+	
+	local button = script.Parent
+	
+	-- Function to teleport the player to the NPC
+	local function teleportToNPC()
+		local character = player.Character
+		if character then
+			local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+			if humanoidRootPart then
+				-- Set the player's position to the NPC's position
+				humanoidRootPart.CFrame = CFrame.new(npc.Position + Vector3.new(0, 3, 0)) -- Adjust to teleport above NPC
+			end
+		end
+	end
+	
+	-- Button click event: Teleport the player to the NPC
+	button.MouseButton1Click:Connect(function()
+		teleportToNPC()
+		print("Player Teleported to the EasterBunny NPC")
+	end)
+	
+end
+coroutine.wrap(EPSTAJK_fake_script)()
+local function MDCVH_fake_script() -- Dane.LocalScript 
+	local script = Instance.new('LocalScript', Dane)
+
+	local player = game.Players.LocalPlayer
+	local npc = game.Workspace:WaitForChild("Lobby"):WaitForChild("QuestStuff"):WaitForChild("NPCs"):WaitForChild("Dane"):WaitForChild("HumanoidRootPart")
+	
+	local button = script.Parent
+	
+	-- Function to teleport the player to the NPC
+	local function teleportToNPC()
+		local character = player.Character
+		if character then
+			local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+			if humanoidRootPart then
+				-- Set the player's position to the NPC's position
+				humanoidRootPart.CFrame = CFrame.new(npc.Position + Vector3.new(0, 3, 0)) -- Adjust to teleport above NPC
+			end
+		end
+	end
+	
+	-- Button click event: Teleport the player to the NPC
+	button.MouseButton1Click:Connect(function()
+		teleportToNPC()
+		print("Player Teleported to the EasterBunny NPC")
+	end)
+	
+end
+coroutine.wrap(MDCVH_fake_script)()
+local function CTTMRAJ_fake_script() -- GetAllEggs.LocalScript 
+	local script = Instance.new('LocalScript', GetAllEggs)
+
+	local player = game.Players.LocalPlayer
+	local button = script.Parent
+	local eggsFolder = game.Workspace:WaitForChild("Stuff")
+	
+	-- Function to teleport the player to a random part inside each egg
+	local function teleportToEggs()
+		-- Get all eggs in the folder
+		local eggs = {}
+		for _, egg in pairs(eggsFolder:GetChildren()) do
+			if egg.Name == "_ItemSmall" then
+				table.insert(eggs, egg)
+				print("Found egg model: " .. egg.Name)
+			end
+		end
+	
+		-- If no eggs were found
+		if #eggs == 0 then
+			print("No eggs named '_ItemSmall' found!")
+			return
+		end
+	
+		-- Loop through each egg and teleport player to a random part inside it with a delay
+		for _, egg in ipairs(eggs) do
+			-- Wait for 2 seconds before teleporting to the next egg
+			wait(2)
+	
+			-- Debug: Print the current egg's name
+			print("Teleporting to egg: " .. egg.Name)
+	
+			-- Find all the parts inside the egg model
+			local eggParts = {}
+			for _, part in pairs(egg:GetChildren()) do
+				-- Debugging: Check if the part is a valid BasePart
+				if part:IsA("BasePart") then
+					table.insert(eggParts, part)
+					print(part.Name .. " is a valid part inside " .. egg.Name)
+				else
+					print(part.Name .. " is not a valid part inside " .. egg.Name)
+				end
+			end
+	
+			-- If there are any valid parts, pick a random one
+			if #eggParts > 0 then
+				local randomPart = eggParts[math.random(1, #eggParts)]  -- Pick a random part
+	
+				-- Debugging: Print the part that was chosen
+				print("Teleporting to random part: " .. randomPart.Name)
+	
+				-- Teleport player to the random part's position, just above it
+				player.Character:SetPrimaryPartCFrame(randomPart.CFrame + Vector3.new(0, 5, 0))  -- Adjust height if needed
+				print("Teleported to random part of egg: " .. egg.Name)
+			else
+				print("No valid parts found in egg: " .. egg.Name)
+			end
+		end
+	end
+	
+	-- Button click event: Start teleporting to eggs
+	button.MouseButton1Click:Connect(function()
+		print("Button clicked. Starting teleportation process...")
+		teleportToEggs()
+		print("Teleportation process finished.")
+	end)
+end
+coroutine.wrap(CTTMRAJ_fake_script)()
+local function PJWKGV_fake_script() -- TextButton.Dragify 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local player = game.Players.LocalPlayer
+	
+	local button = script.Parent
+	
+	local EasterEventFrame = script.Parent.Parent.Parent.EasterEvent
+	local MenuFrame = script.Parent.Parent.Parent.Menu
+	
+	button.MouseButton1Click:Connect(function()
+		-- Toggle EasterEventFrame visibility
+		if EasterEventFrame.Visible == false then
+			EasterEventFrame.Visible = true
+			button.Text = "CLOSE"
+		else
+			EasterEventFrame.Visible = false
+			button.Text = "OPEN"
+		end
+	
+		-- Toggle MenuFrame visibility (optional if you want to toggle it too)
+		if MenuFrame.Visible == false then
+			MenuFrame.Visible = true
+		else
+			MenuFrame.Visible = false
+		end
+	end)
+	
+	
+	
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+		dragToggle = nil
+		dragSpeed = 0.15
+		dragInput = nil
+		dragStart = nil
+		dragPos = nil
+		function updateInput(input)
+			Delta = input.Position - dragStart
+			Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.15), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	dragify(script.Parent)
+	
+end
+coroutine.wrap(PJWKGV_fake_script)()
