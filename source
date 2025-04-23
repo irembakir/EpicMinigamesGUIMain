@@ -317,15 +317,15 @@ TextButton.TextWrapped = true
 
 -- Scripts:
 
-local function JTJBS_fake_script() -- MainEMMenu.LocalScript 
+local function SMGN_fake_script() -- MainEMMenu.LocalScript 
 	local script = Instance.new('LocalScript', MainEMMenu)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/SlamminPig/rblxgames/main/Epic%20Minigames/EpicMinigamesGUI"))()
 	end)
 end
-coroutine.wrap(JTJBS_fake_script)()
-local function ZZSRCD_fake_script() -- InfJump.LocalScript 
+coroutine.wrap(SMGN_fake_script)()
+local function KYGEP_fake_script() -- InfJump.LocalScript 
 	local script = Instance.new('LocalScript', InfJump)
 
 	--// Services
@@ -408,16 +408,16 @@ local function ZZSRCD_fake_script() -- InfJump.LocalScript
 	button.Text = "InfiniteJump: " .. (infJumpEnabled and "ON" or "OFF")
 	
 end
-coroutine.wrap(ZZSRCD_fake_script)()
-local function NPBO_fake_script() -- InfYield.LocalScript 
+coroutine.wrap(KYGEP_fake_script)()
+local function PLDK_fake_script() -- InfYield.LocalScript 
 	local script = Instance.new('LocalScript', InfYield)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 	end)
 end
-coroutine.wrap(NPBO_fake_script)()
-local function CCNK_fake_script() -- Lobby.LocalScript 
+coroutine.wrap(PLDK_fake_script)()
+local function JQRBZ_fake_script() -- Lobby.LocalScript 
 	local script = Instance.new('LocalScript', Lobby)
 
 	local player = game.Players.LocalPlayer
@@ -441,8 +441,8 @@ local function CCNK_fake_script() -- Lobby.LocalScript
 	end)
 	
 end
-coroutine.wrap(CCNK_fake_script)()
-local function EMSWZ_fake_script() -- GoblinsHunter.LocalScript 
+coroutine.wrap(JQRBZ_fake_script)()
+local function LZSEO_fake_script() -- GoblinsHunter.LocalScript 
 	local script = Instance.new('LocalScript', GoblinsHunter)
 
 	--// Services
@@ -495,8 +495,8 @@ local function EMSWZ_fake_script() -- GoblinsHunter.LocalScript
 	end)
 	
 end
-coroutine.wrap(EMSWZ_fake_script)()
-local function DHAB_fake_script() -- EasterBunny.LocalScript 
+coroutine.wrap(LZSEO_fake_script)()
+local function BUDJO_fake_script() -- EasterBunny.LocalScript 
 	local script = Instance.new('LocalScript', EasterBunny)
 
 	local player = game.Players.LocalPlayer
@@ -523,8 +523,8 @@ local function DHAB_fake_script() -- EasterBunny.LocalScript
 	end)
 	
 end
-coroutine.wrap(DHAB_fake_script)()
-local function QDIRXN_fake_script() -- EggVendingMachine.LocalScript 
+coroutine.wrap(BUDJO_fake_script)()
+local function RKGWWX_fake_script() -- EggVendingMachine.LocalScript 
 	local script = Instance.new('LocalScript', EggVendingMachine)
 
 	local player = game.Players.LocalPlayer
@@ -562,8 +562,8 @@ local function QDIRXN_fake_script() -- EggVendingMachine.LocalScript
 	end)
 	
 end
-coroutine.wrap(QDIRXN_fake_script)()
-local function AGXU_fake_script() -- Barnabus.LocalScript 
+coroutine.wrap(RKGWWX_fake_script)()
+local function FFGA_fake_script() -- Barnabus.LocalScript 
 	local script = Instance.new('LocalScript', Barnabus)
 
 	local player = game.Players.LocalPlayer
@@ -590,8 +590,8 @@ local function AGXU_fake_script() -- Barnabus.LocalScript
 	end)
 	
 end
-coroutine.wrap(AGXU_fake_script)()
-local function OBFGB_fake_script() -- Neira.LocalScript 
+coroutine.wrap(FFGA_fake_script)()
+local function YQTWMS_fake_script() -- Neira.LocalScript 
 	local script = Instance.new('LocalScript', Neira)
 
 	local player = game.Players.LocalPlayer
@@ -618,8 +618,8 @@ local function OBFGB_fake_script() -- Neira.LocalScript
 	end)
 	
 end
-coroutine.wrap(OBFGB_fake_script)()
-local function WRUQNY_fake_script() -- Dane.LocalScript 
+coroutine.wrap(YQTWMS_fake_script)()
+local function DGZHFAT_fake_script() -- Dane.LocalScript 
 	local script = Instance.new('LocalScript', Dane)
 
 	local player = game.Players.LocalPlayer
@@ -646,8 +646,8 @@ local function WRUQNY_fake_script() -- Dane.LocalScript
 	end)
 	
 end
-coroutine.wrap(WRUQNY_fake_script)()
-local function KBFATMA_fake_script() -- GetAllEggs.LocalScript 
+coroutine.wrap(DGZHFAT_fake_script)()
+local function MBPRRV_fake_script() -- GetAllEggs.LocalScript 
 	local script = Instance.new('LocalScript', GetAllEggs)
 
 	local player = game.Players.LocalPlayer
@@ -714,8 +714,8 @@ local function KBFATMA_fake_script() -- GetAllEggs.LocalScript
 		print("Teleportation process finished.")
 	end)
 end
-coroutine.wrap(KBFATMA_fake_script)()
-local function MVFGJPS_fake_script() -- TextButton.Dragify 
+coroutine.wrap(MBPRRV_fake_script)()
+local function LSRO_fake_script() -- TextButton.Dragify 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local player = game.Players.LocalPlayer
@@ -783,43 +783,4 @@ local function MVFGJPS_fake_script() -- TextButton.Dragify
 	dragify(script.Parent)
 	
 end
-coroutine.wrap(MVFGJPS_fake_script)()
-local function VFOC_fake_script() -- EpicMiniGamesGUI.LocalScript 
-	local script = Instance.new('LocalScript', EpicMiniGamesGUI)
-
-	local player = game.Players.LocalPlayer
-	local playerGui = player:WaitForChild("PlayerGui")
-	local gui = script.Parent
-	
-	local function restoreGuiToPlayerGui()
-		-- Check if the GUI is already in PlayerGui
-		local existingGui = playerGui:FindFirstChild(gui.Name)
-		if not existingGui then
-			-- Check if the GUI exists in ReplicatedStorage
-			local clonedGui = game.ReplicatedStorage:FindFirstChild(gui.Name)
-			if clonedGui then
-				-- Parent the existing cloned GUI to PlayerGui
-				clonedGui.Parent = playerGui
-			end
-		end
-	end
-	
-	local function cloneGuiToReplicatedStorage()
-		-- Clone the GUI and parent it to ReplicatedStorage if not already cloned
-		if not game.ReplicatedStorage:FindFirstChild(gui.Name) then
-			local clonedGui = gui:Clone()
-			clonedGui.Parent = game.ReplicatedStorage
-		end
-	end
-	
-	-- Clone the GUI to ReplicatedStorage once when the script runs
-	cloneGuiToReplicatedStorage()
-	
-	-- When the player's character respawns, restore the GUI to PlayerGui
-	player.CharacterAdded:Connect(function()
-		wait(0.1)  -- Ensure a short delay after respawn
-		restoreGuiToPlayerGui()
-	end)
-	
-end
-coroutine.wrap(VFOC_fake_script)()
+coroutine.wrap(LSRO_fake_script)()
